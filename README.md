@@ -1,7 +1,8 @@
 This add-on is used as example for the
-[ui-html][] branch of Add-on SDK.
+[ui-html](https://github.com/ZER0/addon-sdk/tree/ui-html) branch of Add-on SDK.
 
-The [ui-html][] branch it's just a proof of concept to add components to
+The [ui-html](https://github.com/ZER0/addon-sdk/tree/ui-html) branch it's just 
+a proof of concept to add components to
 Firefox's UI using just HTML, but providing a more safe environment limiting the
 customizations. That also helps to be consistent by default with UX guidelines.
 It was created to explore an alternative approach for the new
@@ -13,8 +14,8 @@ own HTML too. That HTML could be used to populate the Firefox UI interface.
 For instance, if the add-on needs to add "action button", it can just simply
 have in its HTML, a button like that:
 
-```
-html <button id="my-action-button">Hello</button>
+```html
+<button id="my-action-button">Hello</button>
 ```
 
 The Add-on SDk recognize the button, and it will creates a XUL button in the
@@ -51,7 +52,8 @@ be inconsistent with the UX guidelines and the rest of Firefox interface. But
 the dev should be able to disable the button, for example, or change the icon
 displayed.
 
-That's exactly what the [ui-html][] proof of concept does.
+That's exactly what the [ui-html](https://github.com/ZER0/addon-sdk/tree/ui-html)
+proof of concept does.
 
 # Current Limitation
 
@@ -104,5 +106,3 @@ For instance:
     they can set in HTML and they could be surprised that it doesn't work
     (sure we can raise a nice warning about it if they're trying to do so)
 
-
-[ut-html]:  https://github.com/ZER0/addon-sdk/tree/ui-html
