@@ -103,3 +103,6 @@ For instance:
     they can set in HTML and they could be surprised that it doesn't work
     (sure we can raise a nice warning about it if they're trying to do so)
 
+# Discussion
+
+Please, feel free to [share your feedback!](https://etherpad.mozilla.org/ui-html)
