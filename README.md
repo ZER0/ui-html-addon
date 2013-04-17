@@ -1,7 +1,7 @@
 This add-on is used as example for the
 [ui-html](https://github.com/ZER0/addon-sdk/tree/ui-html) branch of Add-on SDK.
 
-The [ui-html](https://github.com/ZER0/addon-sdk/tree/ui-html) branch it's just 
+The [ui-html](https://github.com/ZER0/addon-sdk/tree/ui-html) branch it's just
 a proof of concept to add components to
 Firefox's UI using just HTML, but providing a more safe environment limiting the
 customizations. That also helps to be consistent by default with UX guidelines.
@@ -83,7 +83,7 @@ Here a list of some **pros** and **cons** I found during the development:
 - Add-on devs can finally use DOM API in the add-on, and pure HTML to
 define the UI too
 - We use the web standards: this approach also is in line with
-[the use of posteMessage](https://gist.github.com/ZER0/5209412) to exchange
+[the use of postMessage](https://gist.github.com/ZER0/5209412) to exchange
 messages between add-on / content
 - We don't expose directly the implementation
 details (XUL), and we can filters which changes can be reflected and which not
@@ -98,9 +98,6 @@ For instance:
   - There is nothing like "button image" - in this proof of concept I used
     `background-image`, I could use `list-style-image` like XUL, but
     it's less used for buttons in regular web development
-  - Neither `element.addEventListener` / `element.removeEventListener` or
-    `element.onclick =` fire any mutation event, therefore we need to override
-    the default method with custom one.
   - We use the web standards, but we limit the changes can be done to an element:
     for instance, devs could be expected to be able to set all events or styling
     they can set in HTML and they could be surprised that it doesn't work
