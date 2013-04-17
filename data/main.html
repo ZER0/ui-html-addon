@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <!-- style tag allowed, but ignored atm-->
+  <style>
+    body {
+      color:red;
+    }
+
+    button {
+      padding: 10px;
+    }
+
+  </style>
+
+  <!-- script tag are stripped out, your main.js is where you have to put the code -->
+  <script>
+    console.log("friends")
+  </script>
+
+  <!-- button added, ignore JS handler but not style. However 'padding' is filtered out -->
+  <button id="my-button" onclick="alert('ok')" style="padding:1em">Hello!</button>
+
+  <!-- no id, so not added -->
+  <button>Not added!</button>
+
+  <button id="drink" style="background-image: url(beer.png)">Drink Beer!</button>
+
+</html>
