@@ -44,6 +44,17 @@ button.addEventListener("click", function(){
 });
 ```
 
+Because it's a full content window, we could also load library like
+[jQuery](http://jquery.com) and having something like:
+
+```js
+  $("#my-action-button").
+    text("Bye").
+    click(function() {
+      console.log("Hello");
+    });
+```
+
 And those changes will be *reflected automatically* to the XUL button. Plus,
 only the changes we want to be proxied are reflected! So, for instance, for our
 "action button" we only want to add listeners for "click" event, no other
@@ -87,6 +98,9 @@ define the UI too
 messages between add-on / content
 - We don't expose directly the implementation
 details (XUL), and we can filters which changes can be reflected and which not
+- Because it's a web page, library like [jQuery](http://jquery.com) can be
+used (see [main.js](https://github.com/ZER0/ui-html-addon/blob/master/lib/main.js)
+for example)
 - Probably I forgot something, however: it's so webby and so cool!
 
 ## Cons
@@ -101,7 +115,7 @@ For instance:
   - We use the web standards, but we limit the changes can be done to an element:
     for instance, devs could be expected to be able to set all events or styling
     they can set in HTML and they could be surprised that it doesn't work
-    (sure we can raise a nice warning about it if they're trying to do so)
+    (sure we can raise a nice warning about it if they're trying to do so).
 
 # Discussion
 
