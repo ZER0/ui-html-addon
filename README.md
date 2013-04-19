@@ -1,4 +1,4 @@
-# Use HTML as User Interface Description Language for Firefox UI
+# Use HTML as User Interface Description Language for Firefox
 
 ![beer button](http://zer0.github.com/ui-html-addon/i/beer-snapshot.png)
 ![coffee](http://zer0.github.com/ui-html-addon/i/coffee-snapshot.png)
