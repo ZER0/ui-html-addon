@@ -1,3 +1,8 @@
+# Use HTML as User Interface Description Language for Firefox UI
+
+![beer button](http://zer0.github.com/ui-html-addon/i/beer-snapshot.png)
+![coffee](http://zer0.github.com/ui-html-addon/i/coffee-snapshot.png)
+
 This add-on is used as example for the
 [ui-html](https://github.com/ZER0/addon-sdk/tree/ui-html) branch of Add-on SDK.
 
